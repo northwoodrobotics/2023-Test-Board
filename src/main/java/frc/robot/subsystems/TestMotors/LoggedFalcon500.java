@@ -29,7 +29,7 @@ public class LoggedFalcon500 implements LoggedMotor{
     public void updateInputs(LoggedMotorIOInputs inputs) {
     inputs.positionRad = Units.rotationsToRadians(
         motor.getSelectedSensorPosition() / TICKS_PER_REV);
-    inputs.velicityRadPerSec = Units.rotationsPerMinuteToRadiansPerSecond(
+    inputs.velocityRadPerSec = Units.rotationsPerMinuteToRadiansPerSecond(
         motor.getSelectedSensorVelocity() * 10 / TICKS_PER_REV);
     inputs.appliedVolts = motor.getMotorOutputVoltage();
     inputs.statorAmps = new double[] { motor.getSupplyCurrent()};

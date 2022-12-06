@@ -59,7 +59,7 @@ public class DualMotor extends SubsystemBase{
     motor2.stop();
   }
   public double getVelocityRPM() {
-    return Units.radiansPerSecondToRotationsPerMinute(input1.velicityRadPerSec);
-  }
+    return Units.radiansPerSecondToRotationsPerMinute(input1.velocityRadPerSec);
+  } 
 
 }

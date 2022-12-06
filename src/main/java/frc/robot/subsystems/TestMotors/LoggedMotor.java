@@ -2,11 +2,23 @@ package frc.robot.subsystems.TestMotors;
 
 import org.littletonrobotics.junction.AutoLog;
 
+/**
+ * This is a class that can be used to log motor Data using Advantagekit, 
+ * software written by 6328 Mechanical Advantage. In this project we use the data to validate the performance of a used drivetrain motor. 
+ * This class logs these parameters: 
+ * @param positions in radians
+ * @param velocity in radians/second
+ * @param current stator voltage 
+ * @param applied Apms 
+ * @param Tempurature 
+ * these can be read through advantagekit 
+ * 
+ */
 public interface LoggedMotor {
     @AutoLog
     public class LoggedMotorIOInputs{
         public double positionRad = 0.0;
-        public double velicityRadPerSec = 0.0;
+        public double velocityRadPerSec = 0.0;
         public double appliedVolts =0.0; 
         public double[] statorAmps = new double[]{}; 
         public double[] statorTempCelcius = new double[]{};

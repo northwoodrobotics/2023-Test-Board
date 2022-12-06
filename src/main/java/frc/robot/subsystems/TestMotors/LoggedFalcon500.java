@@ -8,6 +8,7 @@ import com.ctre.phoenix.motorcontrol.can.TalonFXConfiguration;
 
 import edu.wpi.first.math.util.Units;
 
+
 public class LoggedFalcon500 implements LoggedMotor{
     private static final double TICKS_PER_REV = 2048;
     private final int motorID;
